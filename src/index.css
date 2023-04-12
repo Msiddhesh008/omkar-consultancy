@@ -1,18 +1,3 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-
 :root{
 /* CSS HEX */
 --punch: #d92c2a;
@@ -26,5 +11,120 @@ code {
 --rose-fog: #e4bcb3;
 }
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#scrollWrap{
+  z-index: 2;
+  background-color: var(--bastille);
+  position: fixed;
+  top: 0;
+  height: 1rem;
+  width: 100%;
+}
+#scrollBar{
+  background-color: var(--punch);
+  height: 1rem;
+}
+.nav-menu {
+  /* background: linear-gradient(rgba(0, 0, 0, 0.637), rgba(0, 0, 0, 0.671)); */
+  background-color: var(--bastille);
+  padding: 16px;
+  transition: all 0.7s;
+
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 
 
+.iconStyle {
+  color: var(--punch);
+}
+
+.menu-item {
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #eee;
+  transition: color 0.5s;
+  text-decoration: none;
+}
+
+.menu-item:hover {
+  color: var(--color-primary) !important;
+}
+
+.line1,
+.line2,
+.line3 {
+  width: 23px;
+  height: 3px;
+  margin: 5px;
+  transition: all 0.4s;
+}
+
+.change .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.change .line2 {
+  opacity: 0;
+}
+
+.change .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.custom-navbar {
+  padding: 5px 30px;
+  /* background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)); */
+}
+
+#banner{
+  /* margin-top: 5rem; */
+  min-height: 100vh;
+  background-color: var(--pampas);
+  /* background-image: url("../src/images/banner.jpg"); */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+#banner img{
+  height: 100vh;
+  background-position: center; /* Center the image */
+  object-fit: cover;
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+#banner h6{
+  font-weight: bolder;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .logoText{
+    font-size: 1.5rem;
+  }
+  #banner{ 
+  /* margin-top: 4rem; */
+  }
+}
