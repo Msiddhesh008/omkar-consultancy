@@ -4,8 +4,12 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
   <>
-    <div id="navbar">
-    <nav className="navbar navbar-expand-lg fixed-top mt-1 nav-menu">
+    <div id="navbar" className="fixed-top mt-1">
+      <div className="navtop">
+        <span className="d-lg-block d-mg-block d-none"><i class="bi bi-check-square-fill"></i> Wellcome to EPF & ESIC Consultancy Mentor!</span>
+        <span><i class="bi bi-geo-alt-fill"></i> Shilphata, Khopoli, Raigad - 410 203</span>
+      </div>
+    <nav className="navbar navbar-expand-lg  nav-menu">
       <div className="container-fluid">
         <Link className="navbar-brand text-light " to="#">
           <span className="h1 fw-bold logoText ">Omkar</span>

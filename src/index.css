@@ -20,10 +20,9 @@
 .call{
   position: fixed;
   right: -3rem;
-  top: 23rem;
+  top: 28rem;
   transform: rotate(270deg);
   background-color: var(--bastille) !important;
-  /* color: var(--punch); */
   font-weight: bolder;
   padding: 0.2rem 1rem 0 1rem;
   border-radius: 0.5rem 0.5rem 0 0;
@@ -65,6 +64,15 @@
   color: var(--punch);
 }
 
+.navtop{
+  height: 1.5rem;
+  background-color: #eee;
+  color: var(--punch);
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
 .menu-item {
   font-size: 14px;
   letter-spacing: 1px;
@@ -106,14 +114,14 @@
 #banner{
   min-height: 100vh;
   background-color: var(--pampas);
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
   background: 
    linear-gradient(to left, rgba(255, 255, 255, 0.800) 50%, rgba(255, 255, 255, 0.800) 100%),
    url('https://abcscprod.azureedge.net/abc-of-money/-/media/Project/ABCL/Internal_Images_526x230/526x230/PM/What_is_the_procedure_to_withdraw_PF_amount_526_230_M_PM_076.svg') no-repeat center;
   background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.banner-wrapper{
+  height: 100vh;
 }
 
 #banner img{
@@ -127,15 +135,37 @@
 #banner h6{
   font-weight: bolder;
 }
-
 .banner-left-col{
-  height: 100%;
+  min-height: auto;
   color: var(--bastille);
+  color: #2d3436;
+
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
 
 }
 .banner-left-col h1{
   font-size: 4rem;
   font-weight: 800;
+}
+.whatsapp{
+  color: white;
+  transition: 0.5s;
+  font-size: 1.5rem;
+  text-decoration: none;
+  background-color: var(--punch);
+  width: fit-content;
+  padding: 0.5rem 1rem 0.8rem 1rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+}
+
+.whatsapp:hover{
+  opacity: 85%;
+
 }
 
 
