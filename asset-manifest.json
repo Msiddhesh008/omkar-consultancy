@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/omkar-consultancy/static/css/main.6cbf7fab.css",
-    "main.js": "/omkar-consultancy/static/js/main.e21a6a26.js",
+    "main.css": "/omkar-consultancy/static/css/main.846f7b5c.css",
+    "main.js": "/omkar-consultancy/static/js/main.4bb09e49.js",
     "index.html": "/omkar-consultancy/index.html",
-    "main.6cbf7fab.css.map": "/omkar-consultancy/static/css/main.6cbf7fab.css.map",
-    "main.e21a6a26.js.map": "/omkar-consultancy/static/js/main.e21a6a26.js.map"
+    "main.846f7b5c.css.map": "/omkar-consultancy/static/css/main.846f7b5c.css.map",
+    "main.4bb09e49.js.map": "/omkar-consultancy/static/js/main.4bb09e49.js.map"
   },
   "entrypoints": [
-    "static/css/main.6cbf7fab.css",
-    "static/js/main.e21a6a26.js"
+    "static/css/main.846f7b5c.css",
+    "static/js/main.4bb09e49.js"
   ]
 }
