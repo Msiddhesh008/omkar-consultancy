@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Link, Route, Routes } from "react-router-dom";
 import Navbar from "./Components/Navbar"
 import Home from "./Pages/Home";
 import { useState, useEffect } from "react";
@@ -29,6 +29,10 @@ function App() {
       
     <div id="scrollWrap" >
       <div id="scrollBar" style={{ width: `${scrollTop}%` }}></div>
+    </div>
+
+    <div className="call d-block d-md-none d-lg-none">
+      <Link to="tel:+919730582892" className="callIcon"><p>Call Now</p></Link>
     </div>
     
       <Navbar />

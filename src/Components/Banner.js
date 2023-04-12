@@ -4,10 +4,16 @@ const Banner = () => {
   return (
 
     <div id="banner" className='container-fluid'>
-    <div className="container">
-    <div className="row">
-    <div className="col-12">
+    <div className="container banner-wrapper">
+    <div className="row ">
+
+    <div className="col-lg-7 col-12 h-100 banner-left-col">
     <h6>|| श्री उत्तरेश्वर प्रसन्न ||</h6>
+    <h1 className='fw-bold'><span>Omkar</span> Consultancy Service</h1>
+    </div>
+    
+    <div className="col-lg-5 col-12">
+
     </div>
     </div>
     </div>

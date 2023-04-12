@@ -17,6 +17,27 @@
   box-sizing: border-box;
 }
 
+.call{
+  position: fixed;
+  right: -3rem;
+  top: 23rem;
+  transform: rotate(270deg);
+  background-color: var(--bastille) !important;
+  /* color: var(--punch); */
+  font-weight: bolder;
+  padding: 0.2rem 1rem 0 1rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+.callIcon{
+  color: white;
+  text-decoration: none;
+  transition: 0.5s;
+  font-size: 1.3rem;
+}
+.callIcon:hover{
+  color: var(--punch);
+}
+
 #scrollWrap{
   z-index: 2;
   background-color: var(--bastille);
@@ -36,6 +57,7 @@
   transition: all 0.7s;
 
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 0rem 0 2rem 2rem;
 }
 
 
@@ -49,10 +71,11 @@
   color: #eee;
   transition: color 0.5s;
   text-decoration: none;
+  transform: 0.5s;
 }
 
 .menu-item:hover {
-  color: var(--color-primary) !important;
+  color: var(--punch) !important;
 }
 
 .line1,
@@ -78,23 +101,19 @@
 
 .custom-navbar {
   padding: 5px 30px;
-  /* background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)); */
 }
 
 #banner{
-  /* margin-top: 5rem; */
   min-height: 100vh;
   background-color: var(--pampas);
-  /* background-image: url("../src/images/banner.jpg"); */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
-
   display: flex;
   justify-content: center;
-  align-items: center;
-  text-align: center;
   flex-direction: column;
+  align-items: center;
+  background: 
+   linear-gradient(to left, rgba(255, 255, 255, 0.800) 50%, rgba(255, 255, 255, 0.800) 100%),
+   url('https://abcscprod.azureedge.net/abc-of-money/-/media/Project/ABCL/Internal_Images_526x230/526x230/PM/What_is_the_procedure_to_withdraw_PF_amount_526_230_M_PM_076.svg') no-repeat center;
+  background-size: cover; /* Resize the background image to cover the entire container */
 }
 
 #banner img{
@@ -109,6 +128,15 @@
   font-weight: bolder;
 }
 
+.banner-left-col{
+  height: 100%;
+  color: var(--bastille);
+
+}
+.banner-left-col h1{
+  font-size: 4rem;
+  font-weight: 800;
+}
 
 
 
@@ -124,7 +152,11 @@
   .logoText{
     font-size: 1.5rem;
   }
-  #banner{ 
-  /* margin-top: 4rem; */
+  .nav-menu {
+    border-radius: 0rem 0 1rem 1rem;
   }
+  .banner-left-col h1{
+    font-size: 3rem;
+  }
+  
 }
