@@ -224,7 +224,6 @@
 }
 
 .belt{
-  width: 100%;
   display: flex;
   justify-content: space-around;
   background-color: var(--bastille);
@@ -257,23 +256,9 @@
     font-size: 3rem;
   }
 
-
-
   .featured-card{
     height: 400px;
     width: 320px;
-    border: 2px solid white;
-    background-color: white;
-    border-radius: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 0.5rem;
-  
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    transition: 0.5s;
-    cursor: pointer;
   }
   
 }

@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import epfo from '../../images/EPFO-Color.png'
 
 function FeatureCard({ link, title, disc}) {
   return (

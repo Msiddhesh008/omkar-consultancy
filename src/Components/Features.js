@@ -3,7 +3,6 @@ import FeatureCard from './SubComponents/FeatureCard'
 import epfo from '../images/EPFO-Color.png'
 import esic from '../images/ESIC-Color.png'
 import HeroTitle from './SubComponents/HeroTitle'
-import gTag from '../images/tag.png'
 
 const Features = () => {
   return (

@@ -9,7 +9,6 @@ import Team from '../Components/Team'
 import Contact from '../Components/Contact'
 import FAQ from '../Components/FAQ'
 import Footer from '../Components/Footer'
-import gtag from '../images/tag.png'
 
 
 function Home(){
