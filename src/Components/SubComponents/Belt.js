@@ -3,7 +3,7 @@ import gTag from '../../images/taggold.png'
 
 function Belt() {
   return (
-    <div className="container-fluid bg-primary">
+    <div className="container-fluid">
     <div className="row belt text-center p-lg-5 pt-5 belt">
             <img src={gTag} alt=""  className='col-lg-3 col-12 m-2'/>
             <div className='col-lg-6 col-12 mt-2'>

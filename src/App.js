@@ -1,7 +1,8 @@
-import { Link, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Navbar from "./Components/Navbar"
 import Home from "./Pages/Home";
 import { useState, useEffect } from "react";
+import FloatButton from "./Components/SubComponents/FloatButton";
 
 function App() {
   
@@ -31,9 +32,13 @@ function App() {
       <div id="scrollBar" style={{ width: `${scrollTop}%` }}></div>
     </div>
 
-    <div className="call d-block d-md-none d-lg-none">
+    <FloatButton />
+
+    {/* <div className="call d-block d-md-none d-lg-none">
       <Link to="tel:+919730582892" className="callIcon"><p>Call Now</p></Link>
-    </div>
+    </div> */}
+
+
     
       <Navbar />
       <Routes>

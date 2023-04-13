@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
   <>
-    <div id="navbar" className="fixed-top">
-      <div className="navtop">
+    <div id="navbar" className="fixed-top mt-lg-1 mt-2">
+      <div className="navtop pt-1 pb-1">
         <span className="d-lg-block d-mg-block d-none"><i class="bi bi-check-square-fill"></i> Wellcome to EPF & ESIC Consultancy Mentor!</span>
         <span className="d-lg-block d-mg-block d-none fw-bold">|| श्री उत्तरेश्वर प्रसन्न ||</span>
         <span><i class="bi bi-geo-alt-fill"></i> Shilphata, Khopoli, Raigad - 410 203</span>
