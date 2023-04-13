@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/omkar-consultancy/static/css/main.dc95a669.css",
-    "main.js": "/omkar-consultancy/static/js/main.4b75240b.js",
+    "main.css": "/omkar-consultancy/static/css/main.63b63660.css",
+    "main.js": "/omkar-consultancy/static/js/main.5255d2cd.js",
     "static/media/taggold.png": "/omkar-consultancy/static/media/taggold.06168e9357b621f74240.png",
     "static/media/ESIC-Color.png": "/omkar-consultancy/static/media/ESIC-Color.97d602883a83ba454276.png",
     "static/media/EPFO-Color.png": "/omkar-consultancy/static/media/EPFO-Color.c78bf3af9ecbd26bc8f4.png",
     "static/media/ganesha.png": "/omkar-consultancy/static/media/ganesha.0aa1a87cbdb8b7680ae6.png",
     "index.html": "/omkar-consultancy/index.html",
-    "main.dc95a669.css.map": "/omkar-consultancy/static/css/main.dc95a669.css.map",
-    "main.4b75240b.js.map": "/omkar-consultancy/static/js/main.4b75240b.js.map"
+    "main.63b63660.css.map": "/omkar-consultancy/static/css/main.63b63660.css.map",
+    "main.5255d2cd.js.map": "/omkar-consultancy/static/js/main.5255d2cd.js.map"
   },
   "entrypoints": [
-    "static/css/main.dc95a669.css",
-    "static/js/main.4b75240b.js"
+    "static/css/main.63b63660.css",
+    "static/js/main.5255d2cd.js"
   ]
 }
