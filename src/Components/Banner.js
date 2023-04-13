@@ -10,14 +10,13 @@ const Banner = () => {
     <div className="row h-100 banner-row">
 
     <div className="col-lg-7 col-12 h-100 banner-left-col">
-    <h6>|| श्री उत्तरेश्वर प्रसन्न ||</h6>
     <h1 className='fw-bold'><span>Omkar</span> Consultancy Service</h1>
       <Link to="https://wa.me/+919730582892?text=%20Hello%20Mrs.Vaibhavi%20More%20I%20want%20consultation%20on%20" style={{textDecoration:"none"}}><p className='whatsapp' >Free Consulting</p></Link>
     </div>
     
     
     <div className="col-lg-5 d-none d-lg-block">
-    <img src={ganesha} alt="" width={600}/>
+    <img src={ganesha} alt="" width={500}/>
     </div>
     </div>
     </div>
