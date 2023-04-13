@@ -8,7 +8,7 @@ const Navbar = () => {
       <div className="navtop pt-1 pb-1">
         <span className="d-lg-block d-mg-block d-none"><i class="bi bi-check-square-fill"></i> Wellcome to EPF & ESIC Consultancy Mentor!</span>
         <span className="d-lg-block d-mg-block d-none fw-bold">|| श्री उत्तरेश्वर प्रसन्न ||</span>
-        <span><i class="bi bi-geo-alt-fill"></i> Shilphata, Khopoli, Raigad - 410 203</span>
+        <span><i class="bi bi-geo-alt-fill"></i> Shilphata, Khopoli, Raigad - 410 203</span>  
       </div>
     <nav className="navbar navbar-expand-lg  nav-menu">
       <div className="container-fluid">
@@ -51,7 +51,7 @@ const Navbar = () => {
               aria-current="page"
               to="#aboutus"
             >
-              AboutUS
+              About
             </Link>
           </li>
           <li className="nav-item">
@@ -88,15 +88,6 @@ const Navbar = () => {
               to="#blog"
             >
               Blog
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link
-              className="nav-link text-light m-2 menu-item"
-              aria-current="page"
-              to="#FAQ"
-            >
-              FAQ's
             </Link>
           </li>
           <li className="nav-item">

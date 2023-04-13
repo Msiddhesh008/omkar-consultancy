@@ -11,6 +11,7 @@ const Banner = () => {
 
     <div className="col-lg-7 col-12 h-100 banner-left-col">
     <h1 className='fw-bold'><span>Omkar</span> Consultancy Service</h1>
+    
       <Link to="https://wa.me/+919730582892?text=%20Hello%20Mrs.Vaibhavi%20More%20I%20want%20consultation%20on%20" style={{textDecoration:"none"}}><p className='whatsapp' >Free Consulting</p></Link>
     </div>
     

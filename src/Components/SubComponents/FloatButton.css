@@ -133,7 +133,7 @@
   }
   .fab-action {
     position: absolute;
-    background: var(--punch);
+    background-color: var(--punch);
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
@@ -141,10 +141,21 @@
     align-items: center;
     justify-content: center;
     color: White;
-    box-shadow: 0 0.1rem 1rem rgba(154, 24, 24, 0.82);
+    /* box-shadow: 0 0.1rem 1rem rgba(34, 33, 33, 0.82); */
     transition: all 1s ease;
-  
     opacity: 0;
+  }
+
+  .fab-tel{
+    background-color: #00B2FF;
+  }
+
+  .fab-whatsapp{
+    background-color: #25D366;
+  }
+
+  .fab-call{
+    background-color: #4267B2;
   }
   
   .fab-checkbox:checked ~ .fab-wheel .fab-action {

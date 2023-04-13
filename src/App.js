@@ -4,6 +4,8 @@ import Home from "./Pages/Home";
 import { useState, useEffect } from "react";
 import FloatButton from "./Components/SubComponents/FloatButton";
 
+
+
 function App() {
   
   // ====[ scrollBar ]====
@@ -31,6 +33,8 @@ function App() {
     <div id="scrollWrap" >
       <div id="scrollBar" style={{ width: `${scrollTop}%` }}></div>
     </div>
+
+    <div id="google_element" className="google_element" ></div>
 
     <FloatButton />
 
