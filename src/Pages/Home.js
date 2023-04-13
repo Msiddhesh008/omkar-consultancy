@@ -9,6 +9,7 @@ import Team from '../Components/Team'
 import Contact from '../Components/Contact'
 import FAQ from '../Components/FAQ'
 import Footer from '../Components/Footer'
+import Working from '../Components/Working'
 
 
 function Home(){
@@ -18,6 +19,7 @@ function Home(){
         <Features />
         <Belt />
         <About />
+        <Working />
         <Services />
         <Testimonials />
         <Team />

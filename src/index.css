@@ -236,7 +236,59 @@
 
 }
 
+/* ===[ About ]=== */
 
+#about{
+  min-height: 100vh;
+
+  background-color: var(--pale-slate);
+}
+
+.about-left{
+  text-align: justify !important;
+}
+.card{
+  display: flex;
+  background-color: var(--punch);
+  border: 2px solid white;
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+  /* box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; */
+}
+.about-right{
+  /* box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px; */
+  box-shadow: rgba(15, 23, 31, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+/* ===[ Working ]=== */
+
+#working{
+  height: auto;
+  background-color: white;
+}
+.worlCard{
+  width: fit-content;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.workRow{
+
+  display: flex;
+  justify-content: center;
+  /* flex-direction: column; */
+  align-items: center;
+  gap: 7.5rem;
+
+}
+.iconHolder{
+  /* border: 2px solid var(--corduroy); */
+  border-radius: 50%;
+  padding: 1rem;
+  width: fit-content;
+}
 
 
 
@@ -259,6 +311,10 @@
   .featured-card{
     height: 400px;
     width: 320px;
+  }
+  .workRow{
+    gap: 4rem;
+  
   }
   
 }

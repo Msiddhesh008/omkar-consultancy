@@ -15,6 +15,7 @@
     position: fixed;
     bottom: 3rem;
     right: 3rem;
+    z-index: 1;
   }
   .fab-checkbox {
     display: none;
@@ -24,12 +25,12 @@
     position: absolute;
     bottom: -1rem;
     right: -1rem;
-    width: 4rem;
-    height: 4rem;
+    width: 3.5rem;
+    height: 3.5rem;
     background: red;
     border-radius: 50%;
     background: var(--punch);
-    box-shadow: 0px 5px 20px #f18181;
+    /* box-shadow: 0px 5px 20px #f18181; */
     transition: all 0.3s ease;
     z-index: 1;
     border-bottom-right-radius: 6px;
@@ -55,13 +56,13 @@
   }
   .fab:hover {
     background: #e82c2c;
-    box-shadow: 0px 5px 20px 5px #f18181;
+    /* box-shadow: 0px 5px 20px 5px #f18181; */
   }
   
   .fab-dots {
     position: absolute;
-    height: 8px;
-    width: 8px;
+    height: 6px;
+    width: 6px;
     background-color: white;
     border-radius: 50%;
     top: 50%;

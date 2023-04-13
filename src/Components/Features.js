@@ -11,6 +11,8 @@ const Features = () => {
           <div className="row pt-5 pb-5 features-row">
 
           <HeroTitle 
+          
+          textAlign="text-center"
           title="FEATURES"
           h2="We offer many services to progress!"
           p="As a PF ESI consultant, We provide PF & ESIC registration and monthly return filling
