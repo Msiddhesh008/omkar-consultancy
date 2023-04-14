@@ -10,6 +10,7 @@ import Contact from '../Components/Contact'
 import FAQ from '../Components/FAQ'
 import Footer from '../Components/Footer'
 import Working from '../Components/Working'
+import Belt2 from '../Components/SubComponents/Belt2'
 
 
 function Home(){
@@ -20,6 +21,7 @@ function Home(){
         <Belt />
         <About />
         <Working />
+        <Belt2/>
         <Services />
         <Testimonials />
         <Team />

@@ -256,7 +256,6 @@
 
 #about{
   min-height: 100vh;
-
   background-color: var(--pale-slate);
 }
 
@@ -271,8 +270,43 @@
   /* box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; */
 }
 .about-right{
+  /* width: 100%; */
+  background-image: url("../src/images/pro2.jpeg");
+  background-position: center; /* Center the image */
+  /* object-fit: cover; */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
   /* box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px; */
   box-shadow: rgba(15, 23, 31, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+
+  position: relative;
+
+
+
+  
+  border-radius: 1rem;
+
+
+}
+
+.namecnt{
+  height: 10%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: var(--pampas);
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.name{
+  font-size: large;
+  font-weight: bolder;
 }
 
 /* ===[ Working ]=== */
@@ -306,6 +340,20 @@
   width: fit-content;
 }
 
+/* ===[ Belt2 ]=== */
+
+.belt2{
+  height: 40vh;
+  background-color: #2d3436;
+
+}
+.belt2Cnt{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 
 
 
@@ -329,8 +377,14 @@
     width: 320px;
   }
   .workRow{
-    gap: 4rem;
+    gap: 0rem;
   
+  }
+  .about-right{
+  height: 50vh;
+  }
+  .namecnt{
+    height: 12%;
   }
   
 }
