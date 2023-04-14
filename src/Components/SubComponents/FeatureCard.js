@@ -8,7 +8,7 @@ function FeatureCard({ link, title, disc}) {
         <img src={link} alt="" width={100} />
         <h3 className='mt-3'>{title}</h3>
         <p>{disc}</p>
-        <Link to="#" style={{textDecoration:"none"}}><p className='btn btn-danger' >More Details</p></Link>
+        <Link to="#" style={{textDecoration:"none"}}><p className='featuredCardBtn' >More Details</p></Link>
     
     </div>
   )

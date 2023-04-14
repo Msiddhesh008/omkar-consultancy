@@ -1,5 +1,7 @@
 :root{
 /* CSS HEX */
+/* --punch: #E50914;
+--bastille: #141414; */
 --punch: #d92c2a;
 --bastille: #1c171e;
 --pampas: #faf9f7;
@@ -15,6 +17,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 .google_element{
   position: fixed;
@@ -177,10 +180,11 @@
 }
 .whatsapp{
   color: white;
-  transition: 0.5s;
+  transition: 0.2s;
   font-size: 1.5rem;
   text-decoration: none;
   background-color: var(--punch);
+  border: 1px solid var(--punch);
   width: fit-content;
   padding: 0.5rem 1rem 0.8rem 1rem;
   font-weight: bold;
@@ -188,7 +192,10 @@
 }
 
 .whatsapp:hover{
-  opacity: 85%;
+  color: var(--punch);
+  border: 1px solid var(--punch);
+  background-color: white;
+  
 
 }
 
@@ -211,6 +218,7 @@
   border-bottom: 0.3rem solid var(--punch);
   width: 6rem;
 }
+
 .features-row{
   display: flex;
   justify-content: center;
@@ -229,7 +237,6 @@
   align-items: center;
   flex-direction: column;
   gap: 0.5rem;
-
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   transition: 0.5s;
   cursor: pointer;
@@ -237,6 +244,25 @@
 
 .featured-card:hover{
   border: 2px solid var(--punch);
+}
+
+.featuredCardBtn{
+  color: white;
+  transition: 0.2s;
+  text-decoration: none;
+  background-color: var(--punch);
+  border: 2px solid var(--punch);
+  width: fit-content;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.featuredCardBtn:hover{
+  color: var(--punch);
+  border: 2px solid var(--punch);
+  background-color: white;
+  
+
 }
 
 .belt{
@@ -249,7 +275,6 @@
 .belt img{
   width: 12rem;
   height: 8.5rem;
-
 }
 
 /* ===[ About ]=== */
@@ -278,15 +303,8 @@
   background-size: cover; /* Resize the background image to cover the entire container */
   /* box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px; */
   box-shadow: rgba(15, 23, 31, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
-
   position: relative;
-
-
-
-  
   border-radius: 1rem;
-
-
 }
 
 .namecnt{
@@ -296,7 +314,6 @@
   bottom: 0;
   left: 0;
   background-color: var(--pampas);
-
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -315,17 +332,17 @@
   height: auto;
   background-color: white;
 }
+
 .worlCard{
   width: fit-content;
-
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
 }
-.workRow{
 
+.workRow{
   display: flex;
   justify-content: center;
   /* flex-direction: column; */
@@ -333,6 +350,14 @@
   gap: 7.5rem;
 
 }
+.work-p{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-top: 2px dotted grey;
+  padding: 0.5rem;
+}
+
 .iconHolder{
   /* border: 2px solid var(--corduroy); */
   border-radius: 50%;
@@ -342,19 +367,90 @@
 
 /* ===[ Belt2 ]=== */
 
+#belt2{
+  transform: translateY(6rem);
+}
+
+.belt2row{
+  background: 
+   linear-gradient(to left, rgba(0, 0, 0, 0.8) 100%, rgba(51, 14, 14, 0.8) 100%),
+   url('../src/images/ban.jpeg') no-repeat center;
+  background-size: cover; /* Resize the background image to cover the entire container */
+  color: white;
+  object-fit: cover;
+  border-radius: 1rem;
+  width: 70%;
+}
+
 .belt2{
   height: 40vh;
-  background-color: #2d3436;
-
+  /* background-color: #2d3436; */
 }
+
 .belt2Cnt{
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
+/* ===[ Service ]=== */
 
+#service{
+  min-height: 100vh;
+  background-color: var(--venus);
+}
+
+
+/* ===[Footer ]=== */
+
+#footer{
+  min-height: 60vh;
+  background-color: var(--bastille);
+  color: white;
+}
+
+.footerInput{
+  width: 70%;
+  border-radius: 0.5rem 0 0 0.5rem;
+  border: 2px solid white;
+  outline: var(--punch);
+  
+}
+.footerInput:focus{
+  border: 2px solid var(--punch);
+
+}
+
+
+.footerBtn{
+  width: 20%;
+  border: 2px solid var(--punch);
+  background-color: var(--punch);
+  color: white;
+  border-radius: 0 0.5rem 0.5rem 0;
+  transition: 0.3s;
+}
+
+.footerBtn:hover{
+  
+  border: 2px solid var(--punch);
+  background-color: transparent;
+  color: var(--punch);
+}
+
+.footerCenter p{
+  cursor: pointer;
+}
+
+.bottomFooter{
+  display: flex;
+  color: var(--bastille);
+  background-color: white;
+  font-weight: bold;
+  justify-content: space-around;
+}
 
 
 
@@ -386,5 +482,17 @@
   .namecnt{
     height: 12%;
   }
+  .belt2row{
+    width: 100%;
+  }
+
+  
+.footerInput{
+  width: 70%;
+  
+}
+.footerBtn{
+  width: 30%;
+}
   
 }
