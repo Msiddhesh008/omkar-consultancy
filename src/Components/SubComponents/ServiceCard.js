@@ -10,7 +10,7 @@ const ServiceCard = ({ link, title, disc}) => {
       <p>Lorem ipsum dolor sit amet, consectetur 
         adipisicing elit. Dolore maiores voluptatibus 
         explicabo quisquam unde! In neque at amet velit </p>
-      <img src={image} alt="" width={320}  className='service-img'/>
+      <img src={image} alt=""   className='service-img'/>
       <Link to="#" className='btn text-primary mt-1'>Read More</Link>
       
     </div>
