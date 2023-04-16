@@ -29,23 +29,11 @@ const Services = () => {
               <div class="carousel-item  active">
                 <div className="w-100 row mx-auto d-flex justify-content-center">
 
-                      <ServiceCard 
-                      title="Dummy"
-                      link={epfo}
-                      disc="Best Provident Fund / PF Registration Consultant for company's. We provide Monthly PF Compliance / Return Filling"
-                      />
+                      <ServiceCard/>
 
-                      <ServiceCard 
-                      title="Dummy"
-                      link={epfo}
-                      disc="Best Provident Fund / PF Registration Consultant for company's. We provide Monthly PF Compliance / Return Filling"
-                      />
+                      <ServiceCard />
 
-                      <ServiceCard 
-                      title="Dummy"
-                      link={epfo}
-                      disc="Best Provident Fund / PF Registration Consultant for company's. We provide Monthly PF Compliance / Return Filling"
-                      />
+                      <ServiceCard />
 
                 </div>
               </div>
@@ -54,23 +42,11 @@ const Services = () => {
               <div class="carousel-item ">
                 <div className="w-100 row mx-auto   d-flex justify-content-center">
 
-                      <ServiceCard 
-                      title="Dummy"
-                      link={epfo}
-                      disc="Best Provident Fund / PF Registration Consultant for company's. We provide Monthly PF Compliance / Return Filling"
-                      />
+                      <ServiceCard/>
 
-                      <ServiceCard 
-                      title="Dummy"
-                      link={epfo}
-                      disc="Best Provident Fund / PF Registration Consultant for company's. We provide Monthly PF Compliance / Return Filling"
-                      />
+                      <ServiceCard />
 
-                      <ServiceCard 
-                      title="Dummy"
-                      link={epfo}
-                      disc="Best Provident Fund / PF Registration Consultant for company's. We provide Monthly PF Compliance / Return Filling"
-                      />
+                      <ServiceCard />
 
                 </div>
               </div>
@@ -79,29 +55,17 @@ const Services = () => {
               <div class="carousel-item">
                 <div className="w-100 row mx-auto  d-flex justify-content-center">
 
-                      <ServiceCard 
-                      title="Dummy"
-                      link={epfo}
-                      disc="Best Provident Fund / PF Registration Consultant for company's. We provide Monthly PF Compliance / Return Filling"
-                      />
+                      <ServiceCard/>
 
-                      <ServiceCard 
-                      title="Dummy"
-                      link={epfo}
-                      disc="Best Provident Fund / PF Registration Consultant for company's. We provide Monthly PF Compliance / Return Filling"
-                      />
+                      <ServiceCard />
 
-                      <ServiceCard 
-                      title="Dummy"
-                      link={epfo}
-                      disc="Best Provident Fund / PF Registration Consultant for company's. We provide Monthly PF Compliance / Return Filling"
-                      />
+                      <ServiceCard />
 
                 </div>
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon text-primary" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">

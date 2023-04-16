@@ -1,15 +1,18 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import image from '../../images/globalicon.jpg'
 
 const ServiceCard = ({ link, title, disc}) => {
   return (
     
     <div className="col-4 service-card pt-4 pb-4 ps-3 pe-3 text-center m-2">
-        <img src={link} alt="" width={100} />
-        <h3 className='mt-3'>{title}</h3>
-        <p>{disc}</p>
-        <Link to="#" style={{textDecoration:"none"}}><p className='featuredCardBtn' >More Details</p></Link>
-    
+      <h3>Dummy Card</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur 
+        adipisicing elit. Dolore maiores voluptatibus 
+        explicabo quisquam unde! In neque at amet velit </p>
+      <img src={image} alt="" width={320}  className='service-img'/>
+      <Link to="#" className='btn text-primary mt-1'>Read More</Link>
+      
     </div>
   )
 }
