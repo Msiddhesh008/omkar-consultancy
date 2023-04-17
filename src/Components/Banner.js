@@ -1,23 +1,38 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import ganesha from '../images/ganesha.png'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Banner = () => {
-  return (
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+    });
+  }, [])
+
+  return (
     <div id="banner" className='container-fluid'>
     <div className="container banner-wrapper mt-lg-5 ">
     <div className="row h-100 banner-row">
 
     <div className="col-lg-7 col-12 h-100 banner-left-col">
-    <h1 className='fw-bold'><span>Omkar</span> Consultancy Service</h1>
+    <h1 className='fw-bold' data-aos="fade-up" ><span>Omkar</span> Consultancy Service</h1>
     
-      <Link to="https://wa.me/+919730582892?text=%20Hello%20Mrs.Vaibhavi%20More%20I%20want%20consultation%20on%20" style={{textDecoration:"none"}}><p className='whatsapp' >Free Consulting</p></Link>
+      <Link to="https://wa.me/+919730582892?text=%20Hello%20Mrs.Vaibhavi%20More%20I%20want%20consultation%20on%20" 
+      style={{textDecoration:"none"}}
+      data-aos="fade-up"
+      >
+        <p className='whatsapp' >Free Consulting</p></Link>
     </div>
     
     
     <div className="col-lg-5 d-none d-lg-block">
-    <img src={ganesha} alt="" width={500}/>
+    <img 
+    data-aos="fade-left"
+    src={ganesha} 
+    alt="" width={500}/>
     </div>
     </div>
     </div>

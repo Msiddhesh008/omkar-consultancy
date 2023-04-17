@@ -2,6 +2,7 @@ import React from 'react'
 import HeroTitle from './SubComponents/HeroTitle'
 import shooting from '../images/shooting-target.png'
 import eye from '../images/focus.png'
+import 'aos/dist/aos.css';
 
 function About() {
   return (
@@ -15,6 +16,7 @@ function About() {
             textAlign="text-center"
             title="ABOUT US"
             h2="Welcome to Omkar Consultancy"
+            underlineColor="underline"
             p="Over 10 years of experience we’ll ensure you always get the best guidance. We serve a clients at every level of their organization we can be most useful, whether as a trusted advisor to top trusted our management coach for fronts line employees."
             p2=""
             />
@@ -63,7 +65,8 @@ function About() {
           
           </div>
 
-          <div className="col-12 col-lg-5 bg-white about-right overflow-hidden">
+          <div
+          data-aos="fade-up" className="col-12 col-lg-5 bg-white about-right overflow-hidden">
             {/* <img src={banner} alt="" width={500}/> */}
             <div className="namecnt">
             <h2 className='name '>Mrs. VAIBHAVI MORE</h2>

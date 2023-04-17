@@ -1,9 +1,12 @@
 import React from 'react'
+import 'aos/dist/aos.css';
 
-function WorkingCard({link, h5, p}) {
+function WorkingCard({link, h5, p, aos}) {
   return (
     
-    <div className="col-3 worlCard p-3">
+    <div 
+    data-aos={`${aos}`} 
+    className="col-3 worlCard p-3">
     <div className="iconHolder">
     <img src={link} alt="" width={100}/>
     </div>

@@ -1,7 +1,6 @@
 import React from 'react'
 import HeroTitle from '../Components/SubComponents/HeroTitle'
-import FeatureCard from '../Components/SubComponents/FeatureCard'
-import epfo from "../images/EPFO-Color.png"
+import epfo from "../images/globalicon.jpg"
 import ServiceCard from './SubComponents/ServiceCard'
 
 
@@ -15,6 +14,7 @@ const Services = () => {
             textAlign="text-center"
             title="OUR SERVICES"
             h2="We Offer Services"
+            underlineColor="underlineDake"
             />
             </div>
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
@@ -29,11 +29,14 @@ const Services = () => {
               <div class="carousel-item  active">
                 <div className="w-100 row mx-auto d-flex justify-content-center">
 
-                      <ServiceCard/>
+                      <ServiceCard
+                      aos="fade-up" />
 
-                      <ServiceCard />
+                      <ServiceCard
+                      aos="fade-up" />
 
-                      <ServiceCard />
+                      <ServiceCard
+                      aos="fade-up" />
 
                 </div>
               </div>
@@ -42,11 +45,14 @@ const Services = () => {
               <div class="carousel-item ">
                 <div className="w-100 row mx-auto   d-flex justify-content-center">
 
-                      <ServiceCard/>
+                      <ServiceCard
+                      aos="fade-up"/>
 
-                      <ServiceCard />
+                      <ServiceCard
+                      aos="fade-up" />
 
-                      <ServiceCard />
+                      <ServiceCard
+                      aos="fade-up" />
 
                 </div>
               </div>
@@ -55,11 +61,14 @@ const Services = () => {
               <div class="carousel-item">
                 <div className="w-100 row mx-auto  d-flex justify-content-center">
 
-                      <ServiceCard/>
+                      <ServiceCard
+                      aos="fade-up" />
 
-                      <ServiceCard />
+                      <ServiceCard
+                      aos="fade-up" />
 
-                      <ServiceCard />
+                      <ServiceCard
+                      aos="fade-up" />
 
                 </div>
               </div>

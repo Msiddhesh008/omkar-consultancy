@@ -6,14 +6,17 @@ import HeroTitle from './SubComponents/HeroTitle'
 
 const Features = () => {
   return (
-      <div id="features" className="conatainer-fluid">
+      <div 
+      id="features" 
+      className="conatainer-fluid"
+      >
         <div className="container">
           <div className="row pt-5 pb-5 features-row">
 
           <HeroTitle 
-          
           textAlign="text-center"
           title="FEATURES"
+          underlineColor="underline"
           h2="We offer many services to progress!"
           p="As a PF ESI consultant, We provide PF & ESIC registration and monthly return filling
           PF Withdrawal & Correction Services for Employees & Company."
