@@ -5,7 +5,7 @@ function HeroTitle({title, h2, p, textAlign, underlineColor}) {
   return (
     <div 
     data-aos="fade-up" 
-    className={`col-12 ${textAlign} title-cnt mb-4`}
+    className={`heroTitle col-12 ${textAlign} title-cnt mb-4`}
     >
     <h1 
     data-aos="fade-up" 
@@ -15,7 +15,7 @@ function HeroTitle({title, h2, p, textAlign, underlineColor}) {
     data-aos="fade-up" >{h2}</h2>
     <p 
     data-aos="fade-up" 
-    className='text-dark fs-5 '>{p}</p>
+    className=' fs-5 '>{p}</p>
     </div>
   )
 }

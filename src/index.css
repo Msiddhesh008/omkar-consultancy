@@ -12,8 +12,8 @@
   }
 
 [ data-theme = "dark" ]{
---punch:#d92c2a ;
---bastille: #1c171e  ;
+--punch:#088395;
+--bastille: #0A4D68  ;
 --pampas: #faf9f7;
 --venus: #f0efef;
 --careys-pink: #d49fa0;
@@ -205,7 +205,9 @@
   border: 1px solid var(--punch);
   background-color: white;
 }
-
+.heroTitle{
+  color: var(--bastille);
+}
 /* ===[ features ]=== */
 
 #features {
