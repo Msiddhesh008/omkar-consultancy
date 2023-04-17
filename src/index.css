@@ -11,7 +11,7 @@
   --rose-fog: #e4bcb3;
   }
 
-[ data-theme = "dark" ]{
+/* [ data-theme = "dark" ]{
 --punch:#088395;
 --bastille: #0A4D68  ;
 --pampas: #faf9f7;
@@ -22,7 +22,9 @@
 --corduroy: #6c7471;
 --rose-fog: #e4bcb3;
 
-}
+} */
+
+ 
  
 
 * {
@@ -76,8 +78,11 @@
 #scrollBar {
   background-color: var(--punch);
   height: 1rem;
+  border-radius: 0px 3px;
 }
-
+.heroLogoTitle{
+  color: var(--bastille);
+}
 /* ===[ Nabvbar ]=== */
 
 #navbar {
@@ -146,12 +151,12 @@
 /* ===[ Banner ]=== */
 
 #banner {
-  min-height: 100vh;
+  min-height: 110vh;
   background-color: var(--pampas);
   background: linear-gradient(
       to left,
       rgba(255, 255, 255, 0.8) 50%,
-      rgba(255, 255, 255, 0.8) 100%
+      rgba(255, 255, 255, 0.8) 60%
     ),
     url("https://abcscprod.azureedge.net/abc-of-money/-/media/Project/ABCL/Internal_Images_526x230/526x230/PM/What_is_the_procedure_to_withdraw_PF_amount_526_230_M_PM_076.svg")
       no-repeat center;
@@ -173,6 +178,7 @@
 #banner h6 {
   font-weight: bolder;
 }
+
 .banner-left-col {
   min-height: auto;
   color: var(--bastille);
@@ -181,26 +187,46 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 2rem;
+  gap: 0.5rem;
 }
 .banner-left-col h1 {
-  font-size: 4rem;
+  font-size: 4.5rem;
   font-weight: 800;
 }
-.whatsapp {
+.banner-left-col>p {
+  font-weight: 500;
+
+  
+  background: var(--bastille);
+background: linear-gradient(to right, var(--bastille) 0%, var(--punch) 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.heroText{
+  background: var(--bastille);
+background: linear-gradient(to right, var(--bastille) 0%, var(--punch) 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+}
+
+
+
+.heroBtn {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-decoration: none;
   background-color: var(--punch);
   border: 1px solid var(--punch);
   width: fit-content;
-  padding: 0.5rem 1rem 0.8rem 1rem;
+  padding: 0.5rem;
   font-weight: bold;
   border-radius: 0.5rem;
   transition: 0.2s;
 }
 
-.whatsapp:hover {
+.heroBtn:hover {
   color: var(--punch);
   border: 1px solid var(--punch);
   background-color: white;
@@ -301,15 +327,13 @@
   /* box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; */
 }
 .about-right {
-  /* width: 100%; */
   background-image: url("../src/images/pro2.jpeg");
   background-position: center; /* Center the image */
   /* object-fit: cover; */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
   /* box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px; */
-  box-shadow: rgba(15, 23, 31, 0.48) 6px 2px 16px 0px,
-    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  box-shadow: rgba(15, 23, 31, 0.48) 6px 2px 16px 0px,rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
   position: relative;
   border-radius: 1rem;
 }
@@ -504,6 +528,9 @@
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  #navbar{
+    margin-top: 0.4rem;
+  }
   .logoText {
     font-size: 1.5rem;
   }

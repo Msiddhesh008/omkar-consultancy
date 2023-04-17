@@ -39,7 +39,7 @@ function Working() {
                 p="0 3"
                 />
                 <WorkingCard 
-                aos="fade-left"
+                aos="fade-right"
                 link={solution}
                 h5="Smart Solution"
                 p="0 4"

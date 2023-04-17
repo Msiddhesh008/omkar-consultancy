@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <>
-      <div id="navbar" className="fixed-top mt-lg-1 mt-2">
+      <div id="navbar" className="fixed-top mt-lg-1">
         <div className="navtop pt-1 pb-1">
           <span className="d-lg-block d-mg-block d-none">
             <i class="bi bi-check-square-fill"></i> Wellcome to EPF & ESIC
