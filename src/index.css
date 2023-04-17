@@ -234,7 +234,6 @@
 }
 
 .featured-card {
-  transition: 0.5s;
   height: 400px;
   width: 350px;
   border: 2px solid white;
@@ -413,7 +412,6 @@
   width: 320px;
 }
 .service-card {
-  transform: all 1s;
   height: auto;
   width: 350px;
   color: var(--bastille);

@@ -1,20 +1,13 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
-import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 function FeatureCard({ link, title, disc}) {
-
-  useEffect(() => {
-    AOS.init({
-      duration: 1200,
-    });
-  }, [])
-
   return (
     
     <div 
     data-aos="fade-up" 
+    style={{transition:"0.5s"}}
     className="col-4 featured-card pt-4 pb-4 ps-3 pe-3 text-center m-2">
         <img 
         src={link} alt="" width={100} />
