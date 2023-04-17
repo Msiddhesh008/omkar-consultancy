@@ -3,8 +3,15 @@ import { Link } from 'react-router-dom'
 import ganesha from '../images/ganesha.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Typewriter from 'typewriter-effect';
 
 const Banner = () => {
+
+  const option = {
+  strings: ['Provident Fund.', 'ESIC.', 'Icome Tax Return.'],
+  autoStart: true,
+  loop: true,
+}
 
   useEffect(() => {
     AOS.init({
@@ -21,7 +28,8 @@ const Banner = () => {
     <h1 className='fw-bold' data-aos="fade-up" ><span className='heroText'><b>Omkar Consultancy Service</b></span></h1>
     <p 
     data-aos="fade-up"
-    className='fs-4'>We are one of the most efficient & renowned firms for providing the best Legal Advisory Services like PF & ESIC</p>
+    className='fs-4'>We are one of the most efficient & renowned firms for providing 
+    the best Legal Advisory Services like <b><Typewriter options={option} /></b></p>
     
       <Link to="https://wa.me/+919730582892?text=%20Hello%20Mrs.Vaibhavi%20More%20I%20want%20consultation%20on%20" 
       style={{textDecoration:"none"}}

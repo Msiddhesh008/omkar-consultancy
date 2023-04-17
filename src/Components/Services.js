@@ -1,6 +1,5 @@
 import React from 'react'
 import HeroTitle from '../Components/SubComponents/HeroTitle'
-import epfo from "../images/globalicon.jpg"
 import ServiceCard from './SubComponents/ServiceCard'
 
 
