@@ -1,9 +1,16 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { Link } from 'react-router-dom'
+import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-
 function FeatureCard({ link, title, disc}) {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+    });
+  }, [])
+
   return (
     
     <div 

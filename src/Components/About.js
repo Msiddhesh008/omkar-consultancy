@@ -69,7 +69,7 @@ function About() {
           data-aos="fade-up" className="col-12 col-lg-5 bg-white about-right overflow-hidden">
             {/* <img src={banner} alt="" width={500}/> */}
             <div className="namecnt">
-            <h2 className='name '>Mrs. VAIBHAVI MORE</h2>
+            <h2 className='name '>MRS. VAIBHAVI MORE</h2>
             </div>
 
           </div>

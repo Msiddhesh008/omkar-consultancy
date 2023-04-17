@@ -1,16 +1,4 @@
-:root{
-    /* CSS HEX */
-    --punch: #d92c2a;
-    --bastille: #1c171e;
-    --pampas: #faf9f7;
-    --venus: #f0efef;
-    --careys-pink: #d49fa0;
-    --pale-slate: #c5c4c5;
-    --turkish-rose: #b47c72;
-    --corduroy: #6c7471;
-    --rose-fog: #e4bcb3;
-    }
-    
+ 
 .fab-wrapper {
     position: fixed;
     bottom: 3rem;

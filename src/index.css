@@ -1,7 +1,5 @@
-:root {
+:root{
   /* CSS HEX */
-  /* --punch: #E50914;
---bastille: #141414; */
   --punch: #d92c2a;
   --bastille: #1c171e;
   --pampas: #faf9f7;
@@ -11,7 +9,21 @@
   --turkish-rose: #b47c72;
   --corduroy: #6c7471;
   --rose-fog: #e4bcb3;
+  }
+
+[ data-theme = "dark" ]{
+--punch:#d92c2a ;
+--bastille: #1c171e  ;
+--pampas: #faf9f7;
+--venus: #f0efef;
+--careys-pink: #d49fa0;
+--pale-slate: #c5c4c5;
+--turkish-rose: #b47c72;
+--corduroy: #6c7471;
+--rose-fog: #e4bcb3;
+
 }
+ 
 
 * {
   margin: 0;
@@ -177,7 +189,6 @@
 }
 .whatsapp {
   color: white;
-  transition: 0.2s;
   font-size: 1.5rem;
   text-decoration: none;
   background-color: var(--punch);
@@ -186,6 +197,7 @@
   padding: 0.5rem 1rem 0.8rem 1rem;
   font-weight: bold;
   border-radius: 0.5rem;
+  transition: 0.2s;
 }
 
 .whatsapp:hover {
@@ -222,6 +234,7 @@
 }
 
 .featured-card {
+  transition: 0.5s;
   height: 400px;
   width: 350px;
   border: 2px solid white;
@@ -233,7 +246,6 @@
   flex-direction: column;
   gap: 0.5rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  transition: 0.5s;
   cursor: pointer;
 }
 
@@ -401,6 +413,7 @@
   width: 320px;
 }
 .service-card {
+  transform: all 1s;
   height: auto;
   width: 350px;
   color: var(--bastille);
@@ -414,7 +427,6 @@
   gap: 1rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   cursor: pointer;
-  transition: 1s;
 }
 
 .service-card > h3 {
@@ -472,9 +484,15 @@
   color: var(--punch);
 }
 
-.footerCenter p {
+.footerCenter > p {
   cursor: pointer;
+  transition: all 2s;
 }
+
+.footerCenter > p:hover{
+  color: var(--punch);
+}
+
 
 .bottomFooter {
   display: flex;
