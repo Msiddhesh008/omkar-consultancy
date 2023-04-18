@@ -150,7 +150,7 @@
 /* ===[ Banner ]=== */
 
 #banner {
-  min-height: 110vh;
+  min-height: fit-content;
   background-color: var(--pampas);
   background: linear-gradient(
       to left,
@@ -163,11 +163,17 @@
 }
 
 .banner-wrapper {
-  height: 100vh;
+  height: fit-content;
 }
+.banner-right-col{
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
 
+
+}
 #banner img {
-  height: 100vh;
+  width: 300px;
   background-position: center; /* Center the image */
   object-fit: cover;
   background-repeat: no-repeat; /* Do not repeat the image */
@@ -179,7 +185,7 @@
 }
 
 .banner-left-col {
-  min-height: auto;
+  min-height: 100vh;
   color: var(--bastille);
   color: #2d3436;
 
@@ -236,7 +242,7 @@ background: linear-gradient(to right, var(--bastille) 0%, var(--punch) 100%);
 /* ===[ features ]=== */
 
 #features {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   background-color: var(--venus);
 }
 
@@ -311,7 +317,7 @@ background: linear-gradient(to right, var(--bastille) 0%, var(--punch) 100%);
 /* ===[ About ]=== */
 
 #about {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   background-color: var(--pale-slate);
 }
 
@@ -429,7 +435,7 @@ background: linear-gradient(to right, var(--bastille) 0%, var(--punch) 100%);
 /* ===[ Service ]=== */
 
 #service {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   background-color: var(--venus);
 }
 .service-img {
@@ -477,7 +483,7 @@ background: linear-gradient(to right, var(--bastille) 0%, var(--punch) 100%);
 /* ===[Footer ]=== */
 
 #footer {
-  min-height: 60vh;
+  /* min-height: 60vh; */
   background-color: var(--bastille);
   color: white;
 }

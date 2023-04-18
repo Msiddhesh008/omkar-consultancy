@@ -39,11 +39,11 @@ const Banner = () => {
     </div>
     
     
-    <div className="col-lg-4 d-none d-lg-block">
-    <img 
+    <div className="col-lg-4 banner-right-col d-none d-lg-flex ">
+    <img
     data-aos="fade-left"
     src={ganesha} 
-    alt="" width={400}/>
+    alt="" />
     </div>
     </div>
     </div>
