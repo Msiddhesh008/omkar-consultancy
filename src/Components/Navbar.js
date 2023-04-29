@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+// import logo from "../images/logo.png"
 
 const Navbar = () => {
   return (
@@ -23,6 +24,7 @@ const Navbar = () => {
             <Link className="navbar-brand text-light " to="#">
               <span className="h1 fw-bold logoText ">Omkar</span>
               <span className="h1 iconStyle logoText">Consultancy</span>
+              {/* <img className="logo" src={logo} alt="" width={100} /> */}
             </Link>
             <i
               className="navbar-toggler nav-button"

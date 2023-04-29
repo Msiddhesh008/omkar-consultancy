@@ -1,6 +1,7 @@
 import React from 'react'
 import FeatureCard from './SubComponents/FeatureCard'
 import epfo from '../images/EPFO-Color.png'
+import tax from '../images/income_tax.png'
 import esic from '../images/ESIC-Color.png'
 import HeroTitle from './SubComponents/HeroTitle'
 
@@ -23,19 +24,22 @@ const Features = () => {
           />
 
           <FeatureCard 
+          imgSize={100}
           title="EPFO Consultant"
           link={epfo}
           disc="Best Provident Fund / PF Registration Consultant for company's. We provide Monthly PF Compliance / Return Filling"
           />
           <FeatureCard 
+          imgSize={100}
           title="ESIC Consultant"
           link={esic}
           disc="Best ESIC Registration Consultant for company's. We provide Monthly ESI Return Filling Service & New Member Joining and Exit"
           />
           <FeatureCard 
-          title="PF Withdrawal"
-          link={epfo}
-          disc="We are One of the Best PF Withdrawal Agent / Consultant in all over India. Provides EPF Withdrawal & Member Services"
+          imgSize={150}
+          title="Income Tax & GST Consultant"
+          link={tax}
+          disc="We are One of the Best Icome Tax Consultant in all over India. Provides GST Consulting Services too."
           />
 
           </div>
