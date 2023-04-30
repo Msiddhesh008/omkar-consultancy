@@ -11,7 +11,7 @@ const Belt2 = () => {
 
                 <div
                   data-aos="fade-right" className="belt2Card col-lg-8 col-12 p-5">
-                   <h1 className='fw-bold'>Who Are You?</h1>
+                   <h1 className='fw-bold'>Who Are We?</h1>
                    <p className='fw-normal'>We are most stop solution such as esi/pf 
                     registration and monthly return filling out 
                     sourcing. Omkar consultancy is a professional 
