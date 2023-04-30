@@ -1,7 +1,7 @@
 :root{
   /* CSS HEX */
   --punch: #d92c2a;
-  --bastille: #030303;
+  --bastille: #000000;
   --pampas: #faf9f7;
   --venus: #f0efef;
   --careys-pink: #d49fa0;
@@ -22,6 +22,18 @@
 --corduroy: #6c7471;
 --rose-fog: #e4bcb3;
 
+}
+
+::-webkit-scrollbar{
+  width: 8px;
+  background-color: var(--pampas);
+  
+}
+::-webkit-scrollbar-thumb{
+  width: 8px;
+  background-color: #ccc;
+  border-radius: 4px;
+  cursor: pointer;
 }
  
  
@@ -45,6 +57,8 @@
 .google_element:hover {
   opacity: 100%;
 }
+
+
 
 .call {
   position: fixed;
@@ -107,7 +121,7 @@
   color: var(--bastille);
   font-weight: 500;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .menu-item {
   font-size: 14px;
@@ -184,7 +198,7 @@
   font-weight: bolder;
 }
 
-.banner-left-col {
+.banner-left-col ,.epfo {
   min-height: 100vh;
   color: var(--bastille);
   color: #2d3436;
@@ -194,12 +208,17 @@
   gap: 0.5rem;
 }
 
+.epfo{
+  padding-top: 5rem;
+  min-height: 80vh;
+}
+
 .banner-left-col h1 {
   font-size: 4.5rem;
   font-weight: 800;
 }
 
-.banner-left-col>p {
+.banner-left-col, .epfo >p {
   font-weight: 500;
   background: var(--bastille);
   background: linear-gradient(to right, var(--bastille) 0%, var(--punch) 100%);
@@ -532,6 +551,15 @@
   justify-content: space-around;
 }
 
+.epfoCard{
+  border-radius: 0.5rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.epfoCard span{
+  color: var(--corduroy);
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .logo{
@@ -575,5 +603,17 @@
   }
   .service-img {
     width: 280px;
+  }
+
+  .epfo{
+    padding-top: 9rem;
+    min-height: 100vh;
+  }
+  .epfo >p {
+    font-weight: 500;
+    background: var(--bastille);
+    background: linear-gradient(to right, var(--bastille) 0%, var(--punch) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }

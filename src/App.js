@@ -3,6 +3,7 @@ import Navbar from "./Components/Navbar"
 import Home from "./Pages/Home";
 import { useState, useEffect } from "react";
 import FloatButton from "./Components/SubComponents/FloatButton";
+import EPFO from "./Pages/EPFO";
 
 
 
@@ -47,6 +48,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/omkar-consultancy" element={ <Home /> } />
+        <Route path="/omkar-consultancy/epfo" element={ <EPFO /> } />
 
       </Routes>
       

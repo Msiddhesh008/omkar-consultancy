@@ -1,22 +1,33 @@
-import React from "react";
+import React, { useEffect } from 'react'
 import { Link } from "react-router-dom";
 // import logo from "../images/logo.png"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 
 
 const Navbar = () => {
+
+  
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+    });
+  }, [])
+
+
   return (
     <>
       <div id="navbar" className="fixed-top mt-lg-1">
-        <div className="navtop pt-1 pb-1">
+        <div className="navtop p-1 ps-3 pe-3">
           <span className="d-lg-block d-mg-block d-none">
             <i class="bi bi-check-square-fill"></i> Wellcome to EPF & ESIC
             Consultancy Mentor!
           </span>
-          <span className="d-lg-block d-mg-block d-none fw-bold">
+          {/* <span className="d-lg-block d-mg-block d-none fw-bold">
             || श्री उत्तरेश्वर प्रसन्न ||
-          </span>
+          </span> */}
           <span>
             <i class="bi bi-geo-alt-fill"></i> Shilphata, Khopoli, Raigad - 410
             203
