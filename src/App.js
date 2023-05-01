@@ -4,6 +4,7 @@ import Home from "./Pages/Home";
 import { useState, useEffect } from "react";
 import FloatButton from "./Components/SubComponents/FloatButton";
 import EPFO from "./Pages/EPFO";
+import ScrollToTop from "./Components/ScrollToTop";
 
 
 
@@ -44,14 +45,13 @@ function App() {
     </div> */}
 
 
-    
+    <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path="/omkar-consultancy" element={ <Home /> } />
-        <Route path="/omkar-consultancy/epfo" element={ <EPFO /> } />
+        <Route path="/epfo" element={ <EPFO /> } />
 
       </Routes>
-      
     </div>
   );
 }

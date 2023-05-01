@@ -7,7 +7,7 @@ import { heroTitle } from "./Content/Content";
 
 function About() {
   return (
-    <div id="about" className="container-fluid ">
+    <div id="aboutus" className="container-fluid ">
       <div className="container">
         <div className="row pt-5 pb-5">
           <div className="col-lg-7 col-12 about-left mb-5 mb-lg-0">

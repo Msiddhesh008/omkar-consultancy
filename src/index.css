@@ -1,4 +1,4 @@
-:root{
+:root {
   /* CSS HEX */
   --punch: #d92c2a;
   --bastille: #000000;
@@ -9,34 +9,30 @@
   --turkish-rose: #b47c72;
   --corduroy: #6c7471;
   --rose-fog: #e4bcb3;
-  }
-
-[ data-theme = "dark" ]{
---punch:#088395;
---bastille: #0A4D68  ;
---pampas: #faf9f7;
---venus: #f0efef;
---careys-pink: #d49fa0;
---pale-slate: #c5c4c5;
---turkish-rose: #b47c72;
---corduroy: #6c7471;
---rose-fog: #e4bcb3;
-
 }
 
-::-webkit-scrollbar{
+[data-theme="dark"] {
+  --punch: #088395;
+  --bastille: #0a4d68;
+  --pampas: #faf9f7;
+  --venus: #f0efef;
+  --careys-pink: #d49fa0;
+  --pale-slate: #c5c4c5;
+  --turkish-rose: #b47c72;
+  --corduroy: #6c7471;
+  --rose-fog: #e4bcb3;
+}
+
+::-webkit-scrollbar {
   width: 8px;
   background-color: var(--pampas);
-  
 }
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   width: 8px;
   background-color: #ccc;
   border-radius: 4px;
   cursor: pointer;
 }
- 
- 
 
 * {
   margin: 0;
@@ -57,8 +53,6 @@
 .google_element:hover {
   opacity: 100%;
 }
-
-
 
 .call {
   position: fixed;
@@ -93,7 +87,7 @@
   height: 1rem;
   border-radius: 0px 3px;
 }
-.heroLogoTitle{
+.heroLogoTitle {
   color: var(--bastille);
 }
 /* ===[ Nabvbar ]=== */
@@ -180,7 +174,7 @@
   height: fit-content;
 }
 
-.banner-right-col{
+.banner-right-col {
   flex-direction: column;
   justify-content: center;
   align-items: end;
@@ -198,7 +192,8 @@
   font-weight: bolder;
 }
 
-.banner-left-col ,.epfo {
+.banner-left-col,
+.epfo {
   min-height: 100vh;
   color: var(--bastille);
   color: #2d3436;
@@ -208,7 +203,7 @@
   gap: 0.5rem;
 }
 
-.epfo{
+.epfo {
   padding-top: 5rem;
   min-height: 80vh;
 }
@@ -218,7 +213,8 @@
   font-weight: 800;
 }
 
-.banner-left-col, .epfo >p {
+.banner-left-col,
+.epfo > p {
   font-weight: 500;
   background: var(--bastille);
   background: linear-gradient(to right, var(--bastille) 0%, var(--punch) 100%);
@@ -226,7 +222,7 @@
   -webkit-text-fill-color: transparent;
 }
 
-.heroText{
+.heroText {
   background: var(--bastille);
   background: linear-gradient(to right, var(--bastille) 0%, var(--punch) 100%);
   -webkit-background-clip: text;
@@ -252,7 +248,7 @@
   background-color: white;
 }
 
-.heroTitle{
+.heroTitle {
   color: var(--bastille);
 }
 /* ===[ features ]=== */
@@ -357,7 +353,8 @@
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
   /* box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px; */
-  box-shadow: rgba(15, 23, 31, 0.48) 6px 2px 16px 0px,rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  box-shadow: rgba(15, 23, 31, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
   position: relative;
   border-radius: 0.5rem;
 }
@@ -538,10 +535,9 @@
   transition: all 2s;
 }
 
-.footerCenter > p:hover{
+.footerCenter > p:hover {
   color: var(--punch);
 }
-
 
 .bottomFooter {
   display: flex;
@@ -551,21 +547,22 @@
   justify-content: space-around;
 }
 
-.epfoCard{
+.epfoCard {
   border-radius: 0.5rem;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
-.epfoCard span{
+.epfoCard span {
   color: var(--corduroy);
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  .logo{
+  .logo {
     width: 80px;
   }
-  #navbar{
+  #navbar {
     margin-top: 0.4rem;
   }
   .logoText {
@@ -605,14 +602,18 @@
     width: 280px;
   }
 
-  .epfo{
-    padding-top: 9rem;
+  .epfo {
+    padding-top: 2rem;
     min-height: 100vh;
   }
-  .epfo >p {
+  .epfo > p {
     font-weight: 500;
     background: var(--bastille);
-    background: linear-gradient(to right, var(--bastille) 0%, var(--punch) 100%);
+    background: linear-gradient(
+      to right,
+      var(--bastille) 0%,
+      var(--punch) 100%
+    );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }

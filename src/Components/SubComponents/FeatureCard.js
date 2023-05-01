@@ -13,7 +13,7 @@ function FeatureCard({ link, title, disc, imgSize}) {
         src={link} alt="" width={imgSize} />
         <h3 className='mt-3'>{title}</h3>
         <p>{disc}</p>
-        <Link to="/omkar-consultancy/epfo" style={{textDecoration:"none"}}><p className='featuredCardBtn' >More Details</p></Link>
+        <Link to="/epfo" style={{textDecoration:"none"}}><p className='featuredCardBtn' >More Details</p></Link>
     
     </div>
   )

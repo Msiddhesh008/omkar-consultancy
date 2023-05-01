@@ -28,13 +28,20 @@ const Banner = () => {
             </p>
 
             {/* <Typewriter options={option} /> */}
+              <p 
+              style={{
+                width:"fit-content",
+                fontSize:"1.5rem",
+                border:"1.5px solid maroon"
+              }}
+              className="btn text-start fw-bold">Free Consulting</p>
 
             {/* <Link
               to="https://wa.me/+919730582892?text=%20Hello%20Mrs.Vaibhavi%20More%20I%20want%20consultation%20on%20"
               style={{ textDecoration: "none" }}
               data-aos="fade-up"
             >
-              <p className="heroBtn">Free Consulting</p>
+              <p className="btn">Free Consulting</p>
             </Link> */}
           </div>
 

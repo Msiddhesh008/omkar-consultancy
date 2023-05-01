@@ -35,9 +35,9 @@ const Navbar = () => {
         </div>
         <nav className="navbar navbar-expand-lg  nav-menu">
           <div className="container-fluid">
-            <Link className="navbar-brand text-light " to="#">
-              <span className="h1 fw-bold logoText ">Omkar</span>
-              <span className="h1 iconStyle logoText">Consultancy</span>
+            <Link className="navbar-brand text-light " to="/omkar-consultancy">
+              <span className="h1 fs-1 fw-bold logoText ">O</span>
+              <span className="h1 fs-1 iconStyle logoText">C</span>
               {/* <img className="logo" src={logo} alt="" width={100} /> */}
             </Link>
             <i
@@ -64,7 +64,7 @@ const Navbar = () => {
                 <Link
                   className="nav-link text-light m-2 menu-item"
                   aria-current="page"
-                  to="#home"
+                  to="/omkar-consultancy"
                 >
                   Home
                 </Link>
