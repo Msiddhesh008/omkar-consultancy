@@ -4,6 +4,7 @@ import Home from "./Pages/Home";
 import { useState, useEffect } from "react";
 import FloatButton from "./Components/SubComponents/FloatButton";
 import EPFO from "./Pages/EPFO";
+import ESIC from "./Pages/ESIC";
 import ScrollToTop from "./Components/ScrollToTop";
 
 
@@ -50,6 +51,7 @@ function App() {
       <Routes>
         <Route path="/omkar-consultancy" element={ <Home /> } />
         <Route path="/epfo" element={ <EPFO /> } />
+        <Route path="/esic" element={ <ESIC /> } />
 
       </Routes>
     </div>

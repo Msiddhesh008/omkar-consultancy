@@ -5,11 +5,6 @@ import "aos/dist/aos.css";
 // import Typewriter from 'typewriter-effect';
 
 const Banner = () => {
-  //   const option = {
-  //   strings: ['Provident Fund.', 'ESIC.', 'Icome Tax Return.'],
-  //   autoStart: true,
-  //   loop: true,
-  // }
 
   return (
     <div id="banner" className="container-fluid">

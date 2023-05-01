@@ -5,25 +5,51 @@ import support from '../../images/customer-service.png'
 import quick from '../../images/quick.png'
 import team from '../../images/employee.png'
 import solution from "../../images/innovation.png"
+import pan from "../../images/pan2.png"
+import adhar from "../../images/adhar.png"
 
 const featureDetails = [
     {
       title: "EPFO Consultant",
       imgSize:100,
       link:epfo,
-      disc:"Best Provident Fund / PF Registration Consultant for company's. We provide Monthly PF Compliance / Return Filling"
+      disc:"Best Provident Fund / PF Registration Consultant for company's. We provide Monthly PF Compliance / Return Filling",
+      route:"/epfo"
     },
     {
       title: "ESIC Consultant",
       imgSize:100,
       link: esic,
-      disc:"Best Provident Fund / PF Registration Consultant for company's. We provide Monthly PF Compliance / Return Filling"
+      disc:"Best Provident Fund / PF Registration Consultant for company's. We provide Monthly PF Compliance / Return Filling",
+      route:"/esic"
     },
     {
       title: "Income Tax & GST Consultant",
       imgSize:150,
       link: tax,
-      disc: "We are One of the Best Icome Tax Consultant in all over India. Provides GST Consulting Services too."
+      disc: "We are One of the Best Icome Tax Consultant in all over India. Provides GST Consulting Services too.",
+      route:"/tax"
+    },
+    {
+      title: "Adhar Card Work",
+      imgSize:150,
+      link: adhar,
+      disc: "We are One of the Best Icome Tax Consultant in all over India. Provides GST Consulting Services too.",
+      route:"/tax"
+    },
+    {
+      title: "Pan Card Work",
+      imgSize:60,
+      link: pan,
+      disc: "We are One of the Best Icome Tax Consultant in all over India. Provides GST Consulting Services too.",
+      route:"/tax"
+    },
+    {
+      title: "Company Registration",
+      imgSize:100,
+      link: "https://taxque.in/storage/2023/01/Trademark-Registration-600x600.jpg",
+      disc: "We are One of the Best Icome Tax Consultant in all over India. Provides GST Consulting Services too.",
+      route:"/tax"
     },
   ]
 

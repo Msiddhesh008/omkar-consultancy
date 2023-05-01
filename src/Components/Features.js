@@ -23,6 +23,7 @@ const Features = () => {
                 title={eachFeature.title}
                 link={eachFeature.link}
                 disc={eachFeature.disc}
+                route={eachFeature.route}
               />
             );
           })}

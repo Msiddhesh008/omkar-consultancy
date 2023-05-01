@@ -2,11 +2,8 @@ import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-// import Typewriter from 'typewriter-effect';
 
 const Banner = ({ title, p }) => {
-
-  
 
   useEffect(() => {
     AOS.init({
@@ -26,8 +23,6 @@ const Banner = ({ title, p }) => {
     <p 
     data-aos="fade-up"
     className='fs-5'>{p}</p>
-
-    {/* <Typewriter options={option} /> */}
     
       <Link to="https://wa.me/+919730582892?text=%20Hello%20Mrs.Vaibhavi%20More%20I%20want%20consultation%20on%20" 
       style={{textDecoration:"none"}}
