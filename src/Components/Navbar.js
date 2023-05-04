@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 // import logo from "../images/logo.png"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { HashLink } from 'react-router-hash-link';
 
 
 
@@ -61,67 +62,44 @@ const Navbar = () => {
           >
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link
+                <HashLink
+                  
                   className="nav-link text-light m-2 menu-item"
                   aria-current="page"
-                  to="/omkar-consultancy"
+                  to="/omkar-consultancy#banner"
                 >
                   Home
-                </Link>
+                </HashLink>
               </li>
               <li className="nav-item">
-                <Link
+                <HashLink
+                  smooth
                   className="nav-link text-light m-2 menu-item"
                   aria-current="page"
-                  to="#aboutus"
+                  to="/omkar-consultancy#belt"
                 >
                   About
-                </Link>
+                </HashLink>
               </li>
               <li className="nav-item">
-                <Link
+                <HashLink
+                  smooth
                   className="nav-link text-light m-2 menu-item"
                   aria-current="page"
-                  to="#services"
+                  to="#service"
                 >
                   Services
-                </Link>
+                </HashLink>
               </li>
               <li className="nav-item">
-                <Link
+                <HashLink
+                  smooth
                   className="nav-link text-light m-2 menu-item"
                   aria-current="page"
-                  to="#team"
-                >
-                  Team
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  className="nav-link text-light m-2 menu-item"
-                  aria-current="page"
-                  to="#testimonial"
-                >
-                  Testimonial
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  className="nav-link text-light m-2 menu-item"
-                  aria-current="page"
-                  to="#blog"
-                >
-                  Blog
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  className="nav-link text-light m-2 menu-item"
-                  aria-current="page"
-                  to="#contacts"
+                  to="#footer"
                 >
                   CONTACT
-                </Link>
+                </HashLink>
               </li>
             </ul>
           </div>

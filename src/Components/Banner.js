@@ -1,5 +1,5 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import ganesha from "../images/ganesha.png";
 import "aos/dist/aos.css";
 // import Typewriter from 'typewriter-effect';
@@ -23,6 +23,11 @@ const Banner = () => {
             </p>
 
             {/* <Typewriter options={option} /> */}
+
+            <Link
+              to="https://wa.me/+919730582892?text=%20Hello%20Mrs.Vaibhavi%20More%20I%20want%20consultation%20on%20"
+              // data-aos="fade-up"
+            >
               <p 
               style={{
                 width:"fit-content",
@@ -30,6 +35,7 @@ const Banner = () => {
                 border:"1.5px solid maroon"
               }}
               className="btn text-start fw-bold">Free Consulting</p>
+          </Link>
 
             {/* <Link
               to="https://wa.me/+919730582892?text=%20Hello%20Mrs.Vaibhavi%20More%20I%20want%20consultation%20on%20"

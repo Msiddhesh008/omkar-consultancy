@@ -126,6 +126,7 @@
   transform: 0.5s;
 }
 
+
 .menu-item:hover {
   color: var(--punch) !important;
 }
@@ -475,10 +476,13 @@
   cursor: pointer;
 }
 
-.service-card > h3 {
+.service-card > h5 {
   width: 100%;
   border-bottom: 1px var(--punch) solid;
   padding-bottom: 0.5rem;
+}
+.service-card > span {
+  font-size: medium;
 }
 
 .service-card > img {
@@ -555,6 +559,15 @@
 
 .epfoCard span {
   color: var(--corduroy);
+}
+
+.footerLink{
+  text-decoration: none;
+  color: white;
+  transition: 0.5s;
+}
+.footerLink:hover{
+  color: var(--punch);
 }
 
 /* Extra small devices (phones, 600px and down) */

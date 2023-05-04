@@ -8,6 +8,7 @@ import solution from "../../images/innovation.png";
 import pan from "../../images/pan2.png";
 import adhar from "../../images/adhar.png";
 import labour from "../../images/labour.png";
+import image from "../../images/globalicon.jpg";
 
 const featureDetails = [
   {
@@ -110,4 +111,65 @@ const workingCard = [
   },
 ];
 
-export { featureDetails, heroTitle, workingCard };
+const serviceRowOne = [
+  {
+    title: "Gazzete",
+    disc: "We advise clients on the legal requirements related to gazettes, including the types of notices that must be published, the format and content of the notices.",
+    link: image,
+  },
+  {
+    title: "ISO Certification",
+    disc: "ISO certification is a third-party audit process that verifies that an organization's products, services, or processes meet the requirements of ISO standards.",
+    link: image,
+  },
+  {
+    title: "Udyam Aadhar Certificate",
+    disc: "We assist for the Udyam Aadhar Certificate by providing guidance on the eligibility criteria, documentation requirements, and the registration process.",
+    link: image,
+  },
+];
+
+const serviceRowTwo = [
+  {
+    title: "TradeMark, Brand Name Registration",
+    disc: "Omkar consultancy provides a range of services to individuals and businesses seeking to protect their intellectual property",
+    link: image,
+  },
+  {
+    title: "Gumasta License",
+    disc: "We provide valuable assistance to individuals and businesses that are seeking to obtain or renew a Gumasta License",
+    link: image,
+  },
+  {
+    title: "Import Export License Consultant",
+    disc: "We are professional who provides advice and assistance to businesses that are looking to import or export goods internationally",
+    link: image,
+  },
+];
+
+const serviceRowThree = [
+  {
+    title: "CopyRight Registration Consultant ",
+    disc: "Copyright is a legal right that protects original works of authorship, such as books, music, software, and other forms of creative expression.",
+    link: image,
+  },
+  {
+    title: "Food Registration Consultant",
+    disc: "The consultant will review the relevant regulations and requirements for the registration of food products in a particular jurisdiction or country.",
+    link: image,
+  },
+  {
+    title: "Design mark & patent registration Consultant",
+    disc: "Omkar Consultancy also professionals who assist individuals and businesses with the registration of their intellectual property rights",
+    link: image,
+  },
+];
+
+export {
+  featureDetails,
+  heroTitle,
+  workingCard,
+  serviceRowOne,
+  serviceRowTwo,
+  serviceRowThree,
+};

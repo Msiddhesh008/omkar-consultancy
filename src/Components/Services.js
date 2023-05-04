@@ -1,6 +1,8 @@
 import React from 'react'
 import HeroTitle from '../Components/SubComponents/HeroTitle'
 import ServiceCard from './SubComponents/ServiceCard'
+import { serviceRowOne, serviceRowTwo, serviceRowThree } from './Content/Content'
+
 
 
 const Services = () => {
@@ -16,69 +18,69 @@ const Services = () => {
             underlineColor="underlineDake"
             />
             </div>
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="true">
+            <div className="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
 
-            <div class="carousel-inner">
+            <div className="carousel-inner">
 
-              <div class="carousel-item  active">
+              <div className="carousel-item  active">
                 <div className="w-100 row mx-auto d-flex justify-content-center">
 
-                      <ServiceCard
-                      aos="fade-up" />
 
-                      <ServiceCard
-                      aos="fade-up" />
-
-                      <ServiceCard
-                      aos="fade-up" />
+                  {serviceRowOne.map((eachEl, i) => {
+                    return(<ServiceCard
+                      key={i}
+                      title= {eachEl.title}
+                      disc={eachEl.disc}
+                      link={eachEl.link}
+                      />)
+                  })}
 
                 </div>
               </div>
 
               
-              <div class="carousel-item ">
+              <div className="carousel-item ">
                 <div className="w-100 row mx-auto   d-flex justify-content-center">
 
-                      <ServiceCard
-                      aos="fade-up"/>
-
-                      <ServiceCard
-                      aos="fade-up" />
-
-                      <ServiceCard
-                      aos="fade-up" />
+                {serviceRowTwo.map((eachEl, i) => {
+                    return(<ServiceCard
+                      key={i}
+                      title= {eachEl.title}
+                      disc={eachEl.disc}
+                      link={eachEl.link}
+                      />)
+                  })}
 
                 </div>
               </div>
 
               
-              <div class="carousel-item">
+              <div className="carousel-item">
                 <div className="w-100 row mx-auto  d-flex justify-content-center">
-
-                      <ServiceCard
-                      aos="fade-up" />
-
-                      <ServiceCard
-                      aos="fade-up" />
-
-                      <ServiceCard
-                      aos="fade-up" />
+                {serviceRowThree.map((eachEl, i) => {
+                    return(<ServiceCard
+                    key={i}
+                      title= {eachEl.title}
+                      disc={eachEl.disc}
+                      link={eachEl.link}
+                      />)
+                  })}
 
                 </div>
               </div>
             </div>
-            <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon text-primary" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
+            <button className="carousel-control-prev " type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span className="carousel-control-prev-icon text-primary" aria-hidden="true"></span>
+              <span className="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
+            <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span className="carousel-control-next-icon" aria-hidden="true"></span>
+              <span className="visually-hidden">Next</span>
             </button>
           </div>
           </div>
