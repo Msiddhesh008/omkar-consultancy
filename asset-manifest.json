@@ -1,31 +1,37 @@
 {
   "files": {
     "main.css": "/omkar-consultancy/static/css/main.78020a3b.css",
-    "main.js": "/omkar-consultancy/static/js/main.b4fc5659.js",
+    "main.js": "/omkar-consultancy/static/js/main.b102df9e.js",
     "static/media/pan2.png": "/omkar-consultancy/static/media/pan2.8bf18d49b22aafe078ca.png",
     "static/media/adhar.png": "/omkar-consultancy/static/media/adhar.b529ee8f462e38592fcb.png",
     "static/media/taggold.png": "/omkar-consultancy/static/media/taggold.06168e9357b621f74240.png",
+    "static/media/labour.png": "/omkar-consultancy/static/media/labour.30a2d272cbee1d8b5864.png",
     "static/media/pro2.jpeg": "/omkar-consultancy/static/media/pro2.e44772a935cfcf3fcd02.jpeg",
     "static/media/customer-service.png": "/omkar-consultancy/static/media/customer-service.dbca88c999666099bf15.png",
     "static/media/income_tax.png": "/omkar-consultancy/static/media/income_tax.157dfd065cca3e59e4c5.png",
     "static/media/innovation.png": "/omkar-consultancy/static/media/innovation.cdd13b3f2b0a0aeb1aaa.png",
+    "static/media/working-hours.png": "/omkar-consultancy/static/media/working-hours.a9b8e6c8bc94134290bd.png",
     "static/media/quick.png": "/omkar-consultancy/static/media/quick.b2137b4362fdd541da22.png",
     "static/media/team-management.png": "/omkar-consultancy/static/media/team-management.6db5e50151fc49bca80c.png",
     "static/media/ban.jpeg": "/omkar-consultancy/static/media/ban.f902cdd0589e0cfc5a80.jpeg",
+    "static/media/chat.png": "/omkar-consultancy/static/media/chat.4b0ada94055b13a49bb5.png",
     "static/media/employee.png": "/omkar-consultancy/static/media/employee.55dc4b98c8d817dc3ef4.png",
     "static/media/benefits.png": "/omkar-consultancy/static/media/benefits.07f8b48969b6eb27b0ad.png",
     "static/media/ESIC-Color.png": "/omkar-consultancy/static/media/ESIC-Color.97d602883a83ba454276.png",
     "static/media/EPFO-Color.png": "/omkar-consultancy/static/media/EPFO-Color.c78bf3af9ecbd26bc8f4.png",
+    "static/media/shield.png": "/omkar-consultancy/static/media/shield.e1161555506a496e5a54.png",
     "static/media/globalicon.jpg": "/omkar-consultancy/static/media/globalicon.5033c27406b7793a20f1.jpg",
     "static/media/online (1).png": "/omkar-consultancy/static/media/online (1).639e625e1fd230dfb8a1.png",
+    "static/media/engineer.png": "/omkar-consultancy/static/media/engineer.0977f43f15013f33dc8f.png",
+    "static/media/card.png": "/omkar-consultancy/static/media/card.04171ec08626292b8baa.png",
     "static/media/ganesha.png": "/omkar-consultancy/static/media/ganesha.aff61dcfc69b161fb0d1.png",
     "static/media/schedule.png": "/omkar-consultancy/static/media/schedule.453685f46789e63c250b.png",
     "index.html": "/omkar-consultancy/index.html",
     "main.78020a3b.css.map": "/omkar-consultancy/static/css/main.78020a3b.css.map",
-    "main.b4fc5659.js.map": "/omkar-consultancy/static/js/main.b4fc5659.js.map"
+    "main.b102df9e.js.map": "/omkar-consultancy/static/js/main.b102df9e.js.map"
   },
   "entrypoints": [
     "static/css/main.78020a3b.css",
-    "static/js/main.b4fc5659.js"
+    "static/js/main.b102df9e.js"
   ]
 }
