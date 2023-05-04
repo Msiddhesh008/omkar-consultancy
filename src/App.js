@@ -6,6 +6,10 @@ import FloatButton from "./Components/SubComponents/FloatButton";
 import EPFO from "./Pages/EPFO";
 import ESIC from "./Pages/ESIC";
 import ScrollToTop from "./Components/ScrollToTop";
+import TAXGST from "./Pages/TAXGST";
+import Adhar from "./Pages/Adhar";
+import Pan from "./Pages/Pan";
+import Labour from "./Pages/Labour";
 
 
 
@@ -52,6 +56,10 @@ function App() {
         <Route path="/omkar-consultancy" element={ <Home /> } />
         <Route path="/epfo" element={ <EPFO /> } />
         <Route path="/esic" element={ <ESIC /> } />
+        <Route path="/taxgst" element={ <TAXGST /> } />
+        <Route path="/adhar" element={ <Adhar /> } />
+        <Route path="/pan" element={ <Pan /> } />
+        <Route path="/labour" element={ <Labour /> } />
 
       </Routes>
     </div>
