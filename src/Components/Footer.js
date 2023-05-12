@@ -1,11 +1,62 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import "aos/dist/aos.css";
-// import { HashLink } from 'react-router-hash-link';
+import emailjs from "@emailjs/browser";
 import { Link } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Footer = () => {
+  const [name, setName] = useState("");
+  const [emali, setEmail] = useState("");
+  const [mobile, setMoblie] = useState("");
+  const form = useRef();
+
+  const submitHandler = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_6euwe01",
+        "template_6q38agh",
+        form.current,
+        "JISQq4l30W0-Bskc7"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+
+          toast.error("We will get back to you soon.!", {
+            theme: "dark",
+            icon: false
+          });
+        },
+        (error) => {
+          console.log(error.text);
+          toast.error("Something went wrong", {
+            theme: "colored",
+          });
+        }
+      );
+    setName("");
+    setMoblie("");
+    setEmail("");
+  };
+
+  
   return (
     <>
+    <ToastContainer
+position="top-center"
+autoClose={1000}
+hideProgressBar={false}
+newestOnTop={false}
+closeOnClick
+rtl={false}
+pauseOnFocusLoss
+draggable
+pauseOnHover
+theme="light"
+    />
       <div id="footer" className="container-fluid">
         <div className="container">
           <div className="row pt-5 ">
@@ -17,15 +68,41 @@ const Footer = () => {
                 for Registration and Monthly Return Filling & PF Withdrawal for
                 individuals.
               </p>
-              <form data-aos="fade-up" action="/">
-                <h3>Please Enter your mobile number</h3>
-                <input
-                  type="number"
-                  className="footerInput p-2 ps-3"
-                  placeholder="Mobile number"
-                />
-                <button className="p-2 footerBtn">Submit</button>
-              </form>
+            <form ref={form} onSubmit={submitHandler}>
+              <h3>Lets Talk</h3>
+              <input
+                name="name"
+                type="text"
+                placeholder="Name"
+                className="footerInput p-2 ps-3 m-1"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+              />
+
+              <input
+                name="email"
+                type="email"
+                placeholder="Email"
+                className="footerInput p-2 ps-3 m-1"
+                value={emali}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+
+              <input
+                type="tel"
+                name="mobile"
+                className="footerInput p-2 ps-3 m-1"
+                placeholder="Mobile Number"
+                value={mobile}
+                onChange={(e) => setMoblie(e.target.value)}
+              />
+
+              
+              <button 
+              type="submit"
+              className="p-2 m-1 footerBtn">Submit</button>
+            </form>
+              
             </div>
 
             <div className="col-lg-3 col-12 pb-lg-0 mb-5 footerCenter">

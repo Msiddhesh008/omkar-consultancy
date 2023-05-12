@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from "react-router-dom";
 // import logo from "../images/logo.png"
 import AOS from 'aos';
@@ -9,13 +9,24 @@ import { HashLink } from 'react-router-hash-link';
 
 
 const Navbar = () => {
+  const [burger, setBurger] = useState(false);
+  const [navbar, setNavbar] = useState(false);
 
-  
   useEffect(() => {
     AOS.init({
       duration: 1200,
     });
   }, [])
+
+  
+  const navScrollBackground = () => {
+    if (window.scrollY >= 4 || burger) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+  window.addEventListener("scroll", navScrollBackground);
 
 
   return (
@@ -34,7 +45,10 @@ const Navbar = () => {
             203
           </span>
         </div>
-        <nav className="navbar navbar-expand-lg  nav-menu">
+        <nav className={
+          navbar
+          ? "navbar navbar-expand-lg  nav-menu active"
+          : "navbar navbar-expand-lg  nav-menu" }>
           <div className="container-fluid">
             <Link className="navbar-brand text-light " to="/omkar-consultancy">
               <span className="h1 fs-1 fw-bold logoText ">O</span>
@@ -42,13 +56,17 @@ const Navbar = () => {
               {/* <img className="logo" src={logo} alt="" width={100} /> */}
             </Link>
             <i
-              className="navbar-toggler nav-button"
+              className={
+                burger 
+                ? "navbar-toggler nav-button change"
+                : "navbar-toggler nav-button "}
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent"
               aria-controls="navbarSupportedContent"
               aria-expanded="false"
               aria-label="Toggle navigation"
+              onClick={() => setBurger(!burger)}
             >
               <div className="bg-light line1"></div>
               <div className="bg-light line2"></div>
